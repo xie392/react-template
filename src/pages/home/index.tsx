@@ -5,7 +5,6 @@ import styles from './index.module.scss'
 
 function Home() {
   const dispatch = useDispatch()
-
   const { name, count } = useSelector((state: Rootstate) => ({
     name: state.user.name,
     count: state.user.count

@@ -19,8 +19,11 @@ export default ({ mode }: { mode: string }) => {
         }
       }),
       AutoImport({
+        eslintrc: {
+          enabled: true
+        },
         imports: ['react', 'react-router-dom'],
-        dirs: ['src/api/', 'src/components/', 'src/hooks/'],
+        dirs: ['src/api/', 'src/components/', 'src/hooks/','@douyinfe/semi-ui'],
         // 生成 `auto-import.d.ts` 全局声明
         dts: 'src/auto-import.d.ts'
       })
