@@ -1,0 +1,40 @@
+@import './reset.scss';
+@import './var.scss';
+@import './base.scss';
+
+:root {
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body,
+html {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+
+/**
+*  系统暗色主题
+*/
+@media(prefers-color-scheme: dark) {
+    :root {
+        --m-bg-color: #345455;
+        --m-text-color: #f6f6f6;
+        --m-theme-color: #f36;
+    }
+
+    html {
+        background: var(--m-bg-color);
+        color: var(--m-text-color);
+    }
+}

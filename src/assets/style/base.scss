@@ -1,0 +1,125 @@
+/**
+*   ***********
+*    Flex 布局
+*   ***********
+*/
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-items-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-all-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-gap-5 {
+    gap: 5px;
+}
+
+.flex-gap-10 {
+    gap: 10px;
+}
+
+.flex-gap-15 {
+    gap: 15px;
+}
+
+/* 需要在标签处声明: style="--m-gap: 10px;" 自定义变量 */
+.flex-gap-auto {
+    gap: var(--m-gap);
+}
+
+/**
+*   ***********
+*    Grid 布局
+*   ***********
+*/
+.grid {
+    display: grid;
+}
+
+.grid--column-gap-5 {
+    column-gap: 5px;
+}
+
+.grid--column-gap-10 {
+    column-gap: 10px;
+}
+
+.grid--column-gap-15 {
+    column-gap: 15px;
+}
+
+.grid--row-gap-5 {
+    row-gap: 5px;
+}
+
+.grid--row-gap-10 {
+    row-gap: 10px;
+}
+
+.grid--row-gap-15 {
+    row-gap: 15px;
+}
+
+.grid--gap-5 {
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.grid--gap-10 {
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid--gap-15 {
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+
+/**
+*   ***********
+*    常用类名样式
+*   ***********
+*/
+.bg {
+    background: var(--m-bg-color);
+}
+
+.bg-theme {
+    background: var(--m-theme-color);
+}
+
+.text {
+    color: var(--m-text-color);
+}
+
+.border {
+    border: 1px solid var(--m-text-color);
+}
+
+.card {
+    background: var(--m-bg-color);
+    box-shadow: var(---m-box-shadow);
+    border-radius: var(--m-border-radius);
+}
