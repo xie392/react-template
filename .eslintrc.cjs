@@ -3,7 +3,8 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['react-app', 'plugin:storybook/recommended', './.eslintrc-auto-import.json'],
+  // './.eslintrc-auto-import.json'
+  extends: ['react-app', 'plugin:storybook/recommended'],
   overrides: [
     {
       files: ['**/*.stories.*'],

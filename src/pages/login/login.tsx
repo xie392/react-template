@@ -1,5 +1,7 @@
 import './login.scss'
-import { FormEventHandler } from 'react'
+import { FormEventHandler, useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
+import { setCookie } from '@/utils/auth'
 
 function Login() {
   const [username, setUsername] = useState('123')

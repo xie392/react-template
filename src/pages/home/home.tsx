@@ -1,4 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { isLogin } from '@/utils/auth'
 import { Rootstate } from '@/store'
 import './home.scss'
 
@@ -9,13 +11,10 @@ function Home() {
     count: state.user.count
   }))
 
-  const nav = useNavigate()
-
   const add = () => {
     dispatch({
       type: 'add',
       payload: {
-        name: 'test',
         count: count + 1
       }
     })

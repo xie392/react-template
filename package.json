@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "build:dev": "tsc && vite build --mode dev",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./src",
     "format": "prettier --write src/"
   },
   "dependencies": {

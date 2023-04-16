@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import { Rootstate } from '@/store'
+import { Link, useParams } from 'react-router-dom'
 import './user.scss'
 
 function User() {

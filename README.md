@@ -7,7 +7,6 @@
 - 已在项目中配置好了 `eslint`、`prettier`
 - 已在项目中配置好了 `typescript`
 - 已经做了数据持久化，可以根据自己需求去保存
-- 已经做了自动导入的配置，可以根据自己需求去配置
 ```js
 // path: src/store/index
 const persistConfig = {
