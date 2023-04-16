@@ -1,7 +1,6 @@
 import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
-import checker from 'vite-plugin-checker'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import AutoImport from 'unplugin-auto-import/vite'
 
@@ -12,18 +11,12 @@ export default ({ mode }: { mode: string }) => {
     plugins: [
       react(),
       tsconfigPaths(),
-      checker({
-        typescript: true,
-        eslint: {
-          lintCommand: 'eslint "./src/**/*.{ts,tsx}"'
-        }
-      }),
       AutoImport({
         eslintrc: {
           enabled: true
         },
         imports: ['react', 'react-router-dom'],
-        dirs: ['src/api/', 'src/components/', 'src/hooks/','@douyinfe/semi-ui'],
+        dirs: ['src/api/', 'src/components/', 'src/hooks/', '@douyinfe/semi-ui','src/utils/'],
         // 生成 `auto-import.d.ts` 全局声明
         dts: 'src/auto-import.d.ts'
       })

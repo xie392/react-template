@@ -2,11 +2,12 @@ import React, { lazy } from 'react'
 // import { Navigate } from 'react-router-dom'
 
 // 路由组件
-import Login from '@/pages/user/login/login'
-import Home from '@/pages/home/index'
+import Login from '@/pages/login/login'
+import Home from '@/pages/home/home'
 
 // 懒加载组件
 const Loss = lazy(() => import(/* @vite-ignore */ '@/pages/404/404'))
+const User = lazy(() => import('@/pages/user/user'))
 
 // Loading组件 全局
 const Loading = () => <div className="loading"></div>
@@ -25,6 +26,15 @@ const routers = [
     meta: {
       title: '首页',
       requireAuth: false
+    }
+  },
+  {
+    path: '/user/:id?',
+    name: 'user',
+    element: LazyRouter(<User />),
+    meta: {
+      title: '个人中心',
+      requireAuth: true
     }
   },
   {

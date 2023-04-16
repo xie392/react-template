@@ -1,4 +1,4 @@
-import { getCookie } from '@/utils/auth'
+import { isLogin } from '@/utils/auth'
 import { useRoutes, useLocation, useNavigate } from 'react-router-dom'
 import routers from '@/router'
 import { useEffect } from 'react'
@@ -30,9 +30,10 @@ const ToPages = () => {
 const BeforeRouter = () => {
   const RouterView = useRoutes(routers)
   const Location = useLocation()
+  const flag = isLogin()
+  const login = Location.pathname === '/login'
 
   const { meta = {} } = RouterView?.props?.match?.route
-  const token = getCookie('TOKEN')
 
   // 如果没有 meta，就给一个默认值
   if (!meta?.requireAuth) meta.requireAuth = false
@@ -41,12 +42,12 @@ const BeforeRouter = () => {
   useTitle(meta?.title || 'React-TS')
 
   // 有token，跳转到首页
-  if (Location.pathname === '/login' && token) {
+  if (login && flag) {
     return <ToPages />
   }
 
   // 没有token，且需要鉴权的页面，跳转到登录页
-  if (Location.pathname !== '/login' && !token && meta?.requireAuth) {
+  if (!login && !flag && meta?.requireAuth) {
     return <ToLogin />
   }
 

@@ -34,7 +34,7 @@ export const removeCookie = (key: string) => {
  * @returns
  */
 export const isLogin = () => {
-  return Cookies.get(import.meta.env.VITE_TOKEN) ? true : false
+  return Cookies.get('TOKEN') ? true : false
 }
 
 /**

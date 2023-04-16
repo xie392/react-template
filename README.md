@@ -1,4 +1,4 @@
-# react+ts+redux+router+semi-ui 模板 ——— 开箱即用
+# react+ts+redux+router 模板
 
 每次创建新项目是都需要一堆配置，而且有些配置繁琐花费时间，为了不重复造轮子，我建了一个项目模板，为了方便构建工程。现在介绍一下这个工程:
 
@@ -7,6 +7,7 @@
 - 已在项目中配置好了 `eslint`、`prettier`
 - 已在项目中配置好了 `typescript`
 - 已经做了数据持久化，可以根据自己需求去保存
+- 已经做了自动导入的配置，可以根据自己需求去配置
 ```js
 // path: src/store/index
 const persistConfig = {
@@ -82,4 +83,9 @@ npm run dev
 ```shell
 yarn install
 yarn dev
+```
+
+# 体验地址
+```shell
+https://react-template-ztjmfgkz-xie392.4everland.app/
 ```

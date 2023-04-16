@@ -1,17 +1,9 @@
-$bgColor: #fff;
-$textColor: #262626;
-$themeColor: #f36;
-$font-family: -apple-system;
-$borderColor: #d5d5d5;
-$boxShadow: 0 1px 5px rgba(204, 204, 204, 0.1);
-$borderRadius: 5px;
-
 :root {
-    --m-bg-color: $bgColor;
-    --m-text-color: $textColor;
-    --m-theme-color: $themeColor;
-    --m-font-amily: $font-family;
-    --m-border-color: $borderColor;
-    --m-box-shadow: $boxShadow;
-    --m-border-radius: $borderRadius;
+    --m-bg-color: #fff;
+    --m-text-color: #262626;
+    --m-theme-color: rgba(17, 40, 246, 0.771);
+    --m-font-amily: -apple-system;
+    --m-border-color: #d5d5d5;
+    --m-box-shadow: 0 1px 5px rgba(204, 204, 204, 0.1);
+    --m-border-radius: 5px;
 }
