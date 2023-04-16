@@ -25,7 +25,7 @@ function Home() {
     <div className="home flex-all-center">
       <h3>鉴权页面</h3>
 
-      <Link to={isLogin() ? `/user/${Date.now()}` : '/login/123?redirect=/user'} className="link">
+      <Link to={isLogin() ? `/user/${Date.now()}` : '/login?redirect=/user'} className="link">
         <button className="login-button button button">个人中心</button>
       </Link>
 
