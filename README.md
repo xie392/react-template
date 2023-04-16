@@ -86,6 +86,4 @@ yarn dev
 ```
 
 # 体验地址
-```shell
-https://react-template-ztjmfgkz-xie392.4everland.app/
-```
+[体验地址](https://react-template-ztjmfgkz-xie392.4everland.app/)
